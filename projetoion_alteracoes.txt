@@ -1,0 +1,10 @@
+Adicionar imagens do gráfico ao pdf durante períodos, sem a necessidade de uma interface
+
+Mudar os gráficos pra dinheiro
+
+--------FLUXO DO PROCESSO------------
+
+Enquanto roda o script de ler a Serial
+
+Ele vai adicionando gráficos de 20 em 20 segundos
+

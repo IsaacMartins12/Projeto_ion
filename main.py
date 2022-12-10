@@ -99,7 +99,7 @@ def salva_pdf () :
 
   rgb.save(pdf, "PDF" ,resolution=100.0, save_all=True, append_images=iml)
 
-comport = serial.Serial('COM3', 9600)   
+comport = serial.Serial('COM3', 9600)   # Selecione de acordo com a sua COM e Baud Rate
 print ('Serial Iniciada...\n')
 
 cnx = sqlite3.connect('projeto_ion.db')
@@ -108,9 +108,9 @@ cont=0
 
 try :
   
- while (cont<50) :
+ while (cont<50) :  #   Número de leituras da Serial
    
-  serialValue = str(comport.readline())
+  serialValue = str(comport.readline())  # Ler a Serial
   dados = serialValue.split("|")
   dados_potencia = dados[0][2::]
   dados_tensao = dados[1]
